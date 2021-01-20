@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import SingleBooking from './SingleBooking';
-import AddBooking from './AddBooking';
+import AddBookings from './AddBookings';
 
 export default class Bookings extends Component{
     constructor(props){
@@ -24,7 +24,7 @@ render(){
     return (
         <div>
             <div className="row">
-                <AddBooking/>
+                <AddBookings/>
                 
             </div>
             <div className="row">
