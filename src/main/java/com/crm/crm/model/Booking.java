@@ -9,13 +9,13 @@ import lombok.Data;
 @Entity
 
 public class Booking {
-    private @Id @GeneratedValue Long id;
+    public @Id @GeneratedValue Long id;
 
     private String firstName;
     private String lastName;
     private String email;
 
-    private Booking() {}
+    public Booking() {}
 
     public Booking(String firstName,String lastName, String email){
 
