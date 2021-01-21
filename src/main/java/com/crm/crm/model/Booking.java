@@ -10,15 +10,13 @@ import lombok.Data;
 
 public class Booking {
     public @Id @GeneratedValue Long id;
-
-    private String firstName;
-    private String lastName;
-    private String email;
+    public String firstName;
+    public String lastName;
+    public String email;
 
     public Booking() {}
 
-    public Booking(String firstName,String lastName, String email){
-
+    public Booking(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

@@ -17,23 +17,21 @@ export default class Bookings extends Component{
         //use response from server then return as json data
         .then(response => response.json())
         //update the state bookings
-        .then(data =>this.setState({bookings:data}))
+        .then(data => this.setState({bookings: data}))
     }
 
 render(){
     return (
         <div>
-            <div className="row">
-                <AddBookings/>
-                
-            </div>
-            <div className="row">
-                {this.state.bookings.map((item)=> (
-                    //Every item in database will be avaliable as a single item and iterated through this function
-                    <SingleBooking key={item.id} item = {item}/>
-                ))}
-            </div>
+        <div className="row">
+            <AddBookings />
         </div>
+        <div className="row">
+            { this.state.bookings.map((item) => (
+                <SingleBooking key={item.id} item={item} />
+            ))}
+        </div>
+    </div>
     )
 }
 
