@@ -7,7 +7,7 @@ function App() {
     <div className="container-fluid">
       <nav>
         <div className="nav-wrapper center-align">
-          <a href="/" className="brand-logo">Bookings</a>
+          <a href="/" className="brand-logo" color ="blue">American Airline Bookings</a>
         </div>
       </nav>
       <div className="row">
